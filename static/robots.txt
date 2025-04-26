@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://chat.rathnaschools.com/sitemap.xml
