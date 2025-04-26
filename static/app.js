@@ -20,7 +20,7 @@ function connect() {
     } else if (data.action === 'message') {
       addMessage(data.message, 'partner');
     } else if (data.action === 'partner_disconnected') {
-      setStatus('Partner disconnected. Waiting for new partner...');
+      setStatus('Partner disconnected! Waiting for new partner...');
       paired = false;
       hideChat();
     } else if (data.action === 'error') {
