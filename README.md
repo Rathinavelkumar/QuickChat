@@ -34,7 +34,8 @@ QuickChat/
 1. **Create a new Web Service** on Render.com
     - Environment: Python 3
     - Build Command: `pip install -r requirements.txt`
-    - Start Command: `uvicorn main:app --host 0.0.0.0 --port 10000 --proxy-headers --forwarded-allow-ips="*" --workers 1`
+    - Start Commnad[Dev]: `python -m uvicorn main:app --host 0.0.0.0 --port 10000`
+    - Start Command[PROD]: `uvicorn main:app --host 0.0.0.0 --port 10000 --proxy-headers --forwarded-allow-ips="*" --workers 1`
 2. **Deploy your repo** (push this folder to GitHub and connect it to Render).
 3. Visit your Render URL to use the app!
 
