@@ -1,7 +1,7 @@
 import uvicorn
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from fastapi.staticfiles import StaticFiles
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse, FileResponse
 from typing import List, Dict, Optional
 import asyncio
 
@@ -16,6 +16,10 @@ lock = asyncio.Lock()
 async def get():
     with open("static/index.html", "r", encoding="utf-8") as f:
         return HTMLResponse(content=f.read(), status_code=200)
+
+@app.get("/sitemap.xml")
+async def sitemap():
+    return FileResponse("static/sitemap.xml", media_type="application/xml")
 
 @app.websocket("/ws")
 async def websocket_endpoint(websocket: WebSocket):
