@@ -21,6 +21,11 @@ async def get():
 async def sitemap():
     return FileResponse("static/sitemap.xml", media_type="application/xml")
 
+# --- SITE VERIFICATION ROUTE ---
+@app.get("/sw.js")
+async def sw_js():
+    return FileResponse("sw.js")
+
 @app.websocket("/ws")
 async def websocket_endpoint(websocket: WebSocket):
     await websocket.accept()
