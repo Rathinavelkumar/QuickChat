@@ -53,3 +53,7 @@ See `.gitignore` for recommended ignores (env, cache, IDE files, etc).
 
 ---
 Enjoy chatting randomly and anonymously!
+
+## Quick notes
+  1. Hosted on https://dashboard.render.com
+  2. Ads with https://pubdash.ezoic.com
