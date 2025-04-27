@@ -24,7 +24,7 @@ async def sitemap():
 # --- SITE VERIFICATION ROUTE ---
 @app.get("/sw.js")
 async def sw_js():
-    return FileResponse("sw.js")
+    return FileResponse("static/sw.js", media_type="application/javascript")
 
 @app.websocket("/ws")
 async def websocket_endpoint(websocket: WebSocket):
