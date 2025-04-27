@@ -56,4 +56,4 @@ Enjoy chatting randomly and anonymously!
 
 ## Quick notes
   1. Hosted on https://dashboard.render.com
-  2. Ads with https://pubdash.ezoic.com
+  2. Ads with https://publishers.monetag.com/
